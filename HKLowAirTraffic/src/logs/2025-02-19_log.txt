@@ -1,0 +1,2 @@
+2025-02-19 04:13:19,871 - utils.logger - INFO - Logger initialized
+2025-02-19 04:13:22,825 - utils.logger - INFO - Application closed

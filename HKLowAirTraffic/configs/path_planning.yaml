@@ -1,0 +1,52 @@
+# path_planning.yaml
+# 路径规划及算法参数配置文件
+# 本配置文件定义了低空交通路径规划系统中所用的各类算法的参数设置，包括A*算法、Hybrid 4D 粒子群进化算法 (H4PSEA) 的相关设置。
+
+# A* 算法参数
+a_star:
+  resolution: 1.0                  # 空间分辨率，单位：米（用于空间网格的离散化）
+  time_step: 0.2                   # 时间步长，单位：秒（用于时空网格离散化）
+  heuristic_weight: 0.7            # 启发函数的权重（介于 0 和 1 之间，控制启发函数与实际代价之间的权衡）
+  max_iterations: 100000           # A* 算法的最大迭代次数
+  dynamic_obstacle_avoidance: true # 是否启用动态障碍物避让功能
+
+# Hybrid 4D 粒子群进化算法 (H4PSEA) 参数
+h4psea:
+  population_size: 50       # 粒子群大小，表示候选路径的数量
+  max_iterations: 500       # 最大迭代次数
+  inertia_weight: 0.7       # 粒子的惯性权重，控制粒子保持原有运动状态的倾向
+  cognitive_weight: 1.5     # 个体认知权重，影响粒子根据个人经验进行搜索
+  social_weight: 1.5        # 社会权重，影响粒子根据群体经验进行搜索
+  crossover_rate: 0.8       # 遗传算法的交叉率（保留原有路径的部分结构）
+  mutation_rate: 0.1        # 遗传算法的变异率（对路径进行随机扰动）
+  local_search: true        # 是否在每次迭代后进行局部优化（如 A* 算法）
+
+# 代价函数权重
+cost_function:
+  distance_weight: 0.4      # 路径的空间距离代价权重
+  energy_weight: 0.2        # 能耗代价权重
+  safety_weight: 0.2        # 安全代价权重（与障碍物距离等相关）
+  time_weight: 0.1          # 时间代价权重
+  airspace_weight: 0.1      # 空域层级转换代价权重
+
+# 安全走廊生成参数
+safety_corridor:
+  min_radius: 3.0           # 最小安全半径，单位：米（用于动态障碍物的避让）
+  prediction_horizon: 5.0   # 障碍物预测时长，单位：秒（用于预测障碍物的移动轨迹）
+  transformer:
+    model_path: "models/safety_predictor.onnx"  # 用于障碍物预测的深度学习模型路径
+    input_size: [256, 256]   # 输入图像的大小，用于深度学习模型处理
+
+# 其他配置
+other_config:
+  enable_logging: true             # 是否启用日志记录
+  log_file: "logs/path_planning.log"  # 日志文件路径
+  path_smoothing: true             # 是否对规划结果进行路径平滑处理（例如：通过曲线拟合去除锯齿）
+  max_retries: 5                   # 最大重试次数，若路径规划失败则重新尝试
+
+scenario:
+  start: [0, 0, 0, 0]          # 起点(x, y, z, t) 四维坐标
+  goal: [10, 10, 10, 5]        # 终点(x, y, z, t) 四维坐标
+  obstacles:
+    - [5, 5, 5, 2]             # 障碍物1
+    - [8, 8, 8, 3]             # 障碍物2

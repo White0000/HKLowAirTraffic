@@ -1,0 +1,130 @@
+# camera_params.yaml
+# DJI Camera Calibration Parameters for Multiple Models
+
+phantom4pro:
+  # DJI Phantom 4 Pro (Video mode: 4K @ 30 FPS)
+  resolution:
+    width: 3840               # 图像宽度 (像素)
+    height: 2160              # 图像高度 (像素)
+  fps: 30                     # 帧率
+  intrinsics:
+    fx: 2300.0                # 水平焦距 (像素)
+    fy: 2300.0                # 垂直焦距 (像素)
+    cx: 1920.0                # 主点水平坐标 (像素)
+    cy: 1080.0                # 主点垂直坐标 (像素)
+  distortion_coefficients:
+    k1: -0.05
+    k2: 0.02
+    p1: 0.0
+    p2: 0.0
+  extrinsics:
+    rotation:
+      r11: 1.0
+      r12: 0.0
+      r13: 0.0
+      r21: 0.0
+      r22: 1.0
+      r23: 0.0
+      r31: 0.0
+      r32: 0.0
+      r33: 1.0
+    translation:
+      tx: 0.0
+      ty: 0.0
+      tz: 0.0
+
+mavic2pro:
+  # DJI Mavic 2 Pro (Video mode: 4K @ 30 FPS)
+  resolution:
+    width: 3840
+    height: 2160
+  fps: 30
+  intrinsics:
+    fx: 2500.0
+    fy: 2500.0
+    cx: 1920.0
+    cy: 1080.0
+  distortion_coefficients:
+    k1: -0.04
+    k2: 0.015
+    p1: 0.001
+    p2: -0.001
+  extrinsics:
+    rotation:
+      r11: 1.0
+      r12: 0.0
+      r13: 0.0
+      r21: 0.0
+      r22: 1.0
+      r23: 0.0
+      r31: 0.0
+      r32: 0.0
+      r33: 1.0
+    translation:
+      tx: 0.0
+      ty: 0.0
+      tz: 0.0
+
+inspire2:
+  # DJI Inspire 2 with Zenmuse X7 (Video mode: 4K @ 30 FPS)
+  resolution:
+    width: 4096
+    height: 2160
+  fps: 30
+  intrinsics:
+    fx: 2700.0
+    fy: 2700.0
+    cx: 2048.0
+    cy: 1080.0
+  distortion_coefficients:
+    k1: -0.03
+    k2: 0.01
+    p1: 0.001
+    p2: 0.001
+  extrinsics:
+    rotation:
+      r11: 1.0
+      r12: 0.0
+      r13: 0.0
+      r21: 0.0
+      r22: 1.0
+      r23: 0.0
+      r31: 0.0
+      r32: 0.0
+      r33: 1.0
+    translation:
+      tx: 0.0
+      ty: 0.0
+      tz: 0.0
+
+mavicair2:
+  # DJI Mavic Air 2 (Video mode: 4K @ 30 FPS)
+  resolution:
+    width: 3840
+    height: 2160
+  fps: 30
+  intrinsics:
+    fx: 2200.0
+    fy: 2200.0
+    cx: 1920.0
+    cy: 1080.0
+  distortion_coefficients:
+    k1: -0.045
+    k2: 0.018
+    p1: 0.0
+    p2: 0.0
+  extrinsics:
+    rotation:
+      r11: 1.0
+      r12: 0.0
+      r13: 0.0
+      r21: 0.0
+      r22: 1.0
+      r23: 0.0
+      r31: 0.0
+      r32: 0.0
+      r33: 1.0
+    translation:
+      tx: 0.0
+      ty: 0.0
+      tz: 0.0

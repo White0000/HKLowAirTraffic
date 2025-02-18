@@ -1,0 +1,72 @@
+# drone_config.yaml
+# DJI 无人机性能参数配置文件
+# 本配置文件定义了多个 DJI 型号无人机的关键飞行性能参数，
+# 包括无人机的型号、重量、最大速度、最大飞行高度、电池容量、最大飞行时长、马达功率、尺寸信息、GPS 精度、惯性测量单元(IMU)信息以及障碍物避让功能等。
+
+phantom4pro:
+  model: "Phantom 4 Pro"
+  manufacturer: "DJI"
+  weight_grams: 1380             # 无人机重量（单位：克）
+  max_speed_mps: 20              # 最大飞行速度（单位：米/秒）
+  max_altitude_m: 6000           # 最大飞行高度（单位：米，参考 AGL）
+  battery_capacity_mAh: 5870     # 电池容量（单位：毫安时）
+  max_flight_time_min: 28        # 最大飞行时长（单位：分钟）
+  motor_power_W: 250             # 马达功率（单位：瓦特，估计值）
+  dimensions_mm:
+    length: 350                  # 长度（单位：毫米）
+    width: 350                   # 宽度（单位：毫米）
+    height: 190                  # 高度（单位：毫米）
+  gps_accuracy_m: 1.5            # GPS 精度（单位：米）
+  inertial_measurement_unit: "IMU"
+  obstacle_avoidance: true       # 是否具备障碍物避让功能
+
+mavic2pro:
+  model: "Mavic 2 Pro"
+  manufacturer: "DJI"
+  weight_grams: 907
+  max_speed_mps: 21              # 最大飞行速度（单位：米/秒）
+  max_altitude_m: 6000
+  battery_capacity_mAh: 3850
+  max_flight_time_min: 31
+  motor_power_W: 200             # 马达功率（单位：瓦特，估计值）
+  dimensions_mm:
+    length: 214
+    width: 91
+    height: 84
+  gps_accuracy_m: 1.2
+  inertial_measurement_unit: "IMU"
+  obstacle_avoidance: true
+
+inspire2:
+  model: "Inspire 2"
+  manufacturer: "DJI"
+  weight_grams: 3440
+  max_speed_mps: 26              # 最大飞行速度（单位：米/秒）
+  max_altitude_m: 5000
+  battery_capacity_mAh: 4280     # 单块电池容量（单位：毫安时），Inspire 2 可使用双电池配置
+  max_flight_time_min: 27
+  motor_power_W: 300             # 马达功率（单位：瓦特，估计值）
+  dimensions_mm:
+    length: 415
+    width: 415
+    height: 220
+  gps_accuracy_m: 1.0
+  inertial_measurement_unit: "IMU"
+  obstacle_avoidance: true
+
+mavicair2:
+  model: "Mavic Air 2"
+  manufacturer: "DJI"
+  weight_grams: 570
+  max_speed_mps: 19              # 最大飞行速度（单位：米/秒）
+  max_altitude_m: 5000
+  battery_capacity_mAh: 3500
+  max_flight_time_min: 34
+  motor_power_W: 150             # 马达功率（单位：瓦特，估计值）
+  dimensions_mm:
+    length: 180
+    width: 97
+    height: 77
+  gps_accuracy_m: 1.5
+  inertial_measurement_unit: "IMU"
+  obstacle_avoidance: true

@@ -1,0 +1,36 @@
+2025-02-06 05:45:50,207 - utils.logger - INFO - Logger initialized
+2025-02-06 05:46:05,262 - utils.logger - INFO - Logger initialized
+2025-02-06 05:47:56,659 - utils.logger - INFO - Logger initialized
+2025-02-06 05:48:21,510 - utils.logger - INFO - Logger initialized
+2025-02-06 05:50:09,735 - utils.logger - INFO - Logger initialized
+2025-02-06 05:53:58,305 - utils.logger - INFO - Logger initialized
+2025-02-06 05:55:30,175 - utils.logger - INFO - Logger initialized
+2025-02-06 05:56:37,158 - utils.logger - INFO - Logger initialized
+2025-02-06 05:58:40,314 - utils.logger - INFO - Logger initialized
+2025-02-06 06:00:00,877 - utils.logger - INFO - Logger initialized
+2025-02-06 06:01:52,366 - utils.logger - INFO - Logger initialized
+2025-02-06 06:03:42,084 - utils.logger - INFO - Logger initialized
+2025-02-06 06:04:17,505 - utils.logger - INFO - Logger initialized
+2025-02-06 06:06:48,970 - utils.logger - INFO - Logger initialized
+2025-02-06 06:08:32,000 - utils.logger - INFO - Logger initialized
+2025-02-06 06:09:44,687 - utils.logger - INFO - Logger initialized
+2025-02-06 06:11:19,685 - utils.logger - INFO - Logger initialized
+2025-02-06 06:12:36,539 - utils.logger - INFO - Logger initialized
+2025-02-06 06:12:48,041 - utils.logger - INFO - Path planning started
+2025-02-06 06:12:48,044 - utils.logger - INFO - Path found: [(1, 1, 1), (2, 2, 2), (2, 3, 3), (3, 4, 4), (4, 5, 5), (5, 6, 6), (6, 7, 7), (7, 8, 8), (8, 9, 9), (9, 9, 9), (10, 10, 10)]
+2025-02-06 06:12:49,119 - utils.logger - INFO - Path planning started
+2025-02-06 06:12:49,122 - utils.logger - INFO - Path found: [(1, 1, 1), (2, 2, 2), (2, 3, 3), (3, 4, 4), (4, 5, 5), (5, 6, 6), (6, 7, 7), (7, 8, 8), (8, 9, 9), (9, 9, 9), (10, 10, 10)]
+2025-02-06 06:12:49,750 - utils.logger - INFO - Path planning started
+2025-02-06 06:12:49,753 - utils.logger - INFO - Path found: [(1, 1, 1), (2, 2, 2), (2, 3, 3), (3, 4, 4), (4, 5, 5), (5, 6, 6), (6, 7, 7), (7, 8, 8), (8, 9, 9), (9, 9, 9), (10, 10, 10)]
+2025-02-06 06:12:50,051 - utils.logger - INFO - Path planning started
+2025-02-06 06:12:50,054 - utils.logger - INFO - Path found: [(1, 1, 1), (2, 2, 2), (2, 3, 3), (3, 4, 4), (4, 5, 5), (5, 6, 6), (6, 7, 7), (7, 8, 8), (8, 9, 9), (9, 9, 9), (10, 10, 10)]
+2025-02-06 06:12:58,284 - utils.logger - INFO - Application closed
+2025-02-06 06:13:05,349 - utils.logger - INFO - Logger initialized
+2025-02-06 06:13:22,255 - utils.logger - ERROR - Visualization update failed: 'NoneType' object has no attribute 'points'
+2025-02-06 06:13:34,667 - utils.logger - INFO - Path planning started
+2025-02-06 06:13:37,664 - utils.logger - ERROR - Path planning failed: 'NoneType' object is not subscriptable
+2025-02-06 06:13:39,629 - utils.logger - ERROR - Visualization update failed: 'NoneType' object has no attribute 'points'
+2025-02-06 06:13:59,640 - utils.logger - INFO - Path planning started
+2025-02-06 06:14:00,488 - utils.logger - ERROR - Path planning failed: 'NoneType' object is not subscriptable
+2025-02-06 06:14:01,477 - utils.logger - INFO - Application closed
+2025-02-06 06:14:05,799 - utils.logger - INFO - Logger initialized
